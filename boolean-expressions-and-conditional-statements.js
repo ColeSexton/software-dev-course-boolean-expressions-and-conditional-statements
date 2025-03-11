@@ -42,6 +42,32 @@ if (choice === "mountains" && hasTorch) {
   console.log("You get lost and wander aimlessly.");
 }
 
+
+if (choice === "mountains") {console.log("You encounter a trader in a sunny meadow outside the dark mountains.")};
+
+  const choice2 = readline.question("Do you trade your torch for a sword? Yes or No");
+if (choice2 === "Yes") {
+console.log("You now have a Sword");
+} else {console.log("You still have your torch") ;}
+
+if (choice2 || "yes"){
+console.log("You come across an angry troll") ;
+}
+const choice3 =readline.question("Do you attack the Troll? Yes or No");
+  if (choice3==="Yes" && choice2==="Yes"){
+  console.log("You kill the troll with your sword")}
+   else if(choice3==="Yes" && choice2 !== "Yes"){
+  console.log("You punch the troll, and he hits you back so hard that you land in the village!");
+}
+else if (choice3==="No" && choice2=== "Yes"){
+  console.log("The Troll Attacks you!!"); 
+}else if (choice3==="No" && choice2=== "No"){
+  console.log("The Troll attacks you and kills you!");
+}
+
+
+
+
 /* 
 
 Add Customization and expand the game:
